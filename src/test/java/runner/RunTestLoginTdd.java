@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "html:target/RegressionReportTdd.html"}
 
 )
-public class RunTestTdd {
+public class RunTestLoginTdd {
 }
