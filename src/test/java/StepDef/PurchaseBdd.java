@@ -77,7 +77,7 @@ public class PurchaseBdd extends env_target {
         driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
     }
 
-    @And("User check their order result")
+    @And("User check their order")
     public void userCheckTheirOrder() {
         Duration duration = Duration.ofSeconds(30);
         WebDriverWait wait = new WebDriverWait(driver, duration);
@@ -98,7 +98,7 @@ public class PurchaseBdd extends env_target {
     }
 
     @Then("User get the order result")
-    public void userGetTheMessageThatTheOrderWasSuccessful() {
+    public void userGetTheOrderResult() {
         Duration duration = Duration.ofSeconds(30);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(
@@ -108,7 +108,7 @@ public class PurchaseBdd extends env_target {
     }
 
     @Then("User get error message result")
-    public void userGetErrorMessageBecauseFormNotComplete() {
+    public void userGetErrorMessageResult() {
         Duration duration = Duration.ofSeconds(30);
         WebDriverWait wait = new WebDriverWait(driver, duration);
         wait.until(

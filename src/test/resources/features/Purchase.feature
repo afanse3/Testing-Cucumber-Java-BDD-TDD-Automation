@@ -10,7 +10,7 @@
       And User click checkout button
       And User fill first name, last name, and zip code
       And User click continue button
-      And User check their order result
+      And User check their order
       And User click finish button
       Then User get the order result
 
@@ -23,5 +23,4 @@
       And User click checkout button
       And User doesn't fill first name, last name, and zip code
       And User click continue button
-      And User check their order
       Then User get error message result
